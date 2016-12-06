@@ -1,24 +1,24 @@
 var Counter = React.createClass({
 
-	getInitialState: function() {
+	getInitialState() {
 		return {
 			count: 0
 		}
 	},
 
-	add: function () {
+	add() {
 		this.setState({
 			count: this.state.count + 1
 		}); 
 	},
 
-	subtract: function () {
+	subtract() {
 		this.setState({
 			count: this.state.count - 1
 		}); 
 	},
 
-	render: function() {
+	render() {
 		return (
 			<div>
 				<h1>Counter: {this.state.count}</h1>
